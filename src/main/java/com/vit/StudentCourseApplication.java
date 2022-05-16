@@ -10,7 +10,7 @@ public class StudentCourseApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx =  SpringApplication.run(
 				StudentCourseApplication.class, args);
-		//System.out.println(ctx);
+		System.out.println(ctx);
 	}
 
 }

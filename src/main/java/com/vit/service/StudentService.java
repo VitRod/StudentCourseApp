@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.vit.model.Course;
 import com.vit.model.Student;
 
+@Component
 public class StudentService {
 	
 	        private static List<Student> students = new ArrayList<>();  
@@ -37,6 +40,10 @@ public class StudentService {
 
 	    		students.add(vit);
 	    		students.add(jane);
+	    	}
+	        
+	        public List<Student> retrieveAllStudents() {
+	    		return students;
 	    	}
 	        
 	        

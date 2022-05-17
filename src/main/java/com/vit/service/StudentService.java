@@ -16,19 +16,19 @@ public class StudentService {
 	        
 	        static {
 	    		//Initialize Data
-	    		Course course1 = new Course("Course1", "Spring", "10Steps", Arrays
-	    				.asList("Learn Maven", "Import Project", "First Example",
+	    		Course course1 = new Course("Course1", "Math", "Learning", Arrays
+	    				.asList("Learn from book", "Making Project", "First Example",
 	    						"Second Example"));
-	    		Course course2 = new Course("Course2", "Spring MVC", "10 Examples",
-	    				Arrays.asList("Learn Maven", "Import Project", "First Example",
+	    		Course course2 = new Course("Course2", "Biology", "Learning plants",
+	    				Arrays.asList("Learn from book", "Making Project", "First Example",
 	    						"Second Example"));
-	    		Course course3 = new Course("Course3", "Spring Boot", "6K Students",
-	    				Arrays.asList("Learn Maven", "Learn Spring",
-	    						"Learn Spring MVC", "First Example", "Second Example"));
-	    		Course course4 = new Course("Course4", "Maven",
-	    				"Maven Course!", Arrays.asList(
-	    						"Pom.xml", "Build Life Cycle", "Parent POM",
-	    						"Importing into Eclipse"));
+	    		Course course3 = new Course("Course3", "Drawing", "Learning",
+	    				Arrays.asList("Learn from book", "Making drawing",
+	    						"Drawing animals", "First Example", "Second Example"));
+	    		Course course4 = new Course("Course4", "Programming",
+	    				"Java Course!", Arrays.asList(
+	    						"Maven", "Spring", "Spring Boot",
+	    						"Making project in Eclipse"));
 
 	    		Student vit = new Student("Student1", "Vit Rod",
 	    				"Reader, Programmer, Willy Wonka of code", new ArrayList<>(Arrays
@@ -69,7 +69,7 @@ public class StudentService {
 
 	    		return student.getCourses();
 	    	}
-
-	        
+                                
+	                                                                  
 
 }

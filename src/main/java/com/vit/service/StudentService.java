@@ -45,7 +45,7 @@ public class StudentService {
 	        public List<Student> retrieveAllStudents() {
 	    		return students;
 	    	}
-	        
+	            
 	        
 	        public Student retrieveStudent(String studentId) {
 	    		for (Student student : students) {
@@ -59,17 +59,33 @@ public class StudentService {
 	        public List<Course> retrieveCourses(String studentId) {
 	    		Student student = retrieveStudent(studentId);
 	    		
-	    		if(studentId.equalsIgnoreCase("Student1")){
-	    			throw new RuntimeException("Something went wrong");
+//	    		if(studentId.equalsIgnoreCase("Student1")){
+//	    			throw new RuntimeException("Something went wrong");
+//	    		}
+
+	    		if (student == null) {
+	    			return null;
 	    		}
+    
+	    		return student.getCourses();
+	    	}
+	        
+	        public Course retrieveCourse(String studentId, String courseId) {
+	    		Student student = retrieveStudent(studentId);
 
 	    		if (student == null) {
 	    			return null;
 	    		}
 
-	    		return student.getCourses();
+	    		for (Course course : student.getCourses()) {
+	    			if (course.getId().equals(courseId)) {
+	    				return course;
+	    			}
+	    		}
+
+	    		return null;
 	    	}
                                 
-	                                                                  
-
+	                                                                                      
+                
 }

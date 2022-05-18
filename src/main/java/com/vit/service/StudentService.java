@@ -13,7 +13,7 @@ import com.vit.model.Student;
 public class StudentService {
 	
 	        private static List<Student> students = new ArrayList<>();  
-	        
+	               
 	        static {
 	    		//Initialize Data
 	    		Course course1 = new Course("Course1", "Math", "Learning", Arrays

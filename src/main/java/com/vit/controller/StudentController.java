@@ -26,13 +26,13 @@ public class StudentController {
 	@GetMapping("/students")
 	public List<Student> retieveStudents(){
 		return studentService.retrieveAllStudents();
-	}
+	}   
 	
 	@GetMapping("/students/{studentId}/courses/{courseId}")
 	public Course retrieveDetailsForCourse(@PathVariable String studentId,
 			@PathVariable String courseId) {
 		return studentService.retrieveCourse(studentId, courseId);
 	}
-	
-	             
+	                                                  
+	                                                                                     
 }
